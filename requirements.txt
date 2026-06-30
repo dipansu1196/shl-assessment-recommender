@@ -1,6 +1,9 @@
 # Core dependencies for SHL Assessment Recommender
 # Optimized for Render 512MB tier - CPU only, NO CUDA
 
+# PyTorch CPU-only (must be installed first via custom PyTorch index in render.yaml)
+torch>=1.11.0
+
 # Embeddings (lightweight model) - CPU only
 sentence-transformers>=2.2.0
 transformers>=4.30.0

@@ -1,17 +1,13 @@
 services:
   - type: web
     name: shl-assessment-recommender
-    runtime: python311
-    plan: free
-    # Build: install CPU-only torch explicitly, then other deps, then download model
-    buildCommand: pip install --no-cache-dir torch==2.12.1 --index-url https://download.pytorch.org/whl/cpu && pip install --no-cache-dir -r requirements.txt && python build.py
-    # Start: single worker, lazy loading, memory optimized
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1 --loop uvloop --http httptools --timeout-keep-alive 5
+    runtime: python
+    buildCommand: |
+      pip install --index-url https://download.pytorch.org/whl/cpu torch
+      pip install -r requirements.txt
+    startCommand: python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
+      - key: PYTHON_VERSION
+        value: "3.10"
       - key: GROQ_API_KEY
-        scope: run
         sync: false
-      - key: PYTHONUNBUFFERED
-        value: "1"
-      - key: PIP_NO_CACHE_DIR
-        value: "1"
