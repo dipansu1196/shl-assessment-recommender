@@ -1,0 +1,51 @@
+.env
+.env.local
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+venv/
+env/
+ENV/
+.venv/
+
+# Local logs
+*.log
+
+# Generated retrieval artifacts (rebuild via data/build_index.py)
+data/catalog.json
+data/catalog.faiss
+data/catalog_meta.pkl
+
+# Local reference docs/notes not required for runtime
+SHL_AI_Intern_Assignment.pdf
+\# SHL Conversational Assessment Rec.txt

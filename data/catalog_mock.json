@@ -1,0 +1,62 @@
+[
+  {
+    "entity_id": "1001",
+    "name": "Core Java (Advanced Level) (New)",
+    "link": "https://www.shl.com/products/product-catalog/view/core-java-advanced-level-new/",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration": "13 minutes",
+    "remote": "yes",
+    "adaptive": "no",
+    "description": "Multi-choice test that measures advanced Java knowledge including concurrency, JVM internals, and performance tuning for senior developers.",
+    "keys": ["Knowledge & Skills"]
+  },
+  {
+    "entity_id": "1002",
+    "name": "Occupational Personality Questionnaire OPQ32r",
+    "link": "https://www.shl.com/products/product-catalog/view/occupational-personality-questionnaire-opq32r/",
+    "job_levels": ["All Levels"],
+    "languages": ["English International", "French", "German", "Spanish"],
+    "duration": "25 minutes",
+    "remote": "yes",
+    "adaptive": "no",
+    "description": "Comprehensive personality assessment measuring 32 workplace behavior dimensions including leadership, teamwork, and problem-solving styles.",
+    "keys": ["Personality & Behavior"]
+  },
+  {
+    "entity_id": "1003",
+    "name": "SHL Verify Interactive G+",
+    "link": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-g/",
+    "job_levels": ["Graduate", "Professional"],
+    "languages": ["English (USA)", "Chinese", "Korean"],
+    "duration": "36 minutes",
+    "remote": "yes",
+    "adaptive": "yes",
+    "description": "Adaptive general reasoning test covering inductive, numerical, and deductive reasoning for graduate and professional roles.",
+    "keys": ["Ability & Aptitude"]
+  },
+  {
+    "entity_id": "1004",
+    "name": "Graduate Scenarios",
+    "link": "https://www.shl.com/products/product-catalog/view/graduate-scenarios/",
+    "job_levels": ["Graduate"],
+    "languages": ["English International"],
+    "duration": "Untimed",
+    "remote": "yes",
+    "adaptive": "no",
+    "description": "Situational judgment test designed for graduate-level candidates measuring workplace decision-making and problem-solving.",
+    "keys": ["Biodata & Situational Judgment"]
+  },
+  {
+    "entity_id": "1005",
+    "name": "Smart Interview Live Coding",
+    "link": "https://www.shl.com/products/product-catalog/view/smart-interview-live-coding/",
+    "job_levels": ["Professional", "Senior Professional"],
+    "languages": ["English (USA)"],
+    "duration": "Variable",
+    "remote": "yes",
+    "adaptive": "yes",
+    "description": "Live coding interview platform for technical screening allowing real-time assessment of programming skills.",
+    "keys": ["Knowledge & Skills"]
+  }
+]
