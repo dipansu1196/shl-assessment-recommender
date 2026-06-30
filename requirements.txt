@@ -1,10 +1,9 @@
 # Core dependencies for SHL Assessment Recommender
-# Optimized for Render 512MB tier - CPU only, no CUDA
+# Optimized for Render 512MB tier - CPU only, NO CUDA
 
-# Embeddings (lightweight model)
+# Embeddings (lightweight model) - CPU only
 sentence-transformers>=2.2.0
 transformers>=4.30.0
-torch>=2.12.0
 faiss-cpu>=1.7.4
 
 # API framework
@@ -19,7 +18,6 @@ groq>=0.4.0
 
 # Utilities
 python-dotenv>=1.0.0
-numpy>=1.24.0
 
 # Testing
 pytest>=7.4.0
