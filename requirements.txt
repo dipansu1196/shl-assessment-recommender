@@ -4,9 +4,10 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.1.0+cpu
 
-# Embeddings - pinned versions for compatibility
-sentence-transformers==2.2.2
-transformers==4.35.2
+# Embeddings - pinned for compatibility with torch 2.1 + huggingface_hub
+sentence-transformers==3.0.1
+transformers==4.44.2
+huggingface_hub==0.24.7
 faiss-cpu>=1.7.4
 
 # API framework
