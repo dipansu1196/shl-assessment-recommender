@@ -1,7 +1,9 @@
 # Core dependencies for SHL Assessment Recommender
-# Optimized for Render 512MB tier - CPU only via pip.conf
 
-# Embeddings (lightweight model) - will pull torch CPU-only via pip.conf index
+# PyTorch CPU-only - pinned wheel URL to avoid CUDA download
+torch @ https://download.pytorch.org/whl/cpu/torch-2.1.0%2Bcpu-cp311-cp311-linux_x86_64.whl
+
+# Embeddings
 sentence-transformers>=2.2.0
 transformers>=4.30.0
 faiss-cpu>=1.7.4
