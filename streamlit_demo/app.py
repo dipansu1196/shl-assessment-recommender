@@ -31,7 +31,7 @@ def initialize_session_state():
     if "messages" not in st.session_state:
         st.session_state.messages = []
     if "api_url" not in st.session_state:
-        st.session_state.api_url = os.getenv("API_URL", "http://localhost:8000")
+        st.session_state.api_url = os.getenv("API_URL", "https://shl-assessment-recommender-0wam.onrender.com")
 
 
 def get_api_url():

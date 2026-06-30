@@ -9,3 +9,14 @@ services:
         value: "3.11"
       - key: GROQ_API_KEY
         sync: false
+
+  - type: web
+    name: shl-demo-ui
+    runtime: python
+    buildCommand: pip install -r streamlit_demo/requirements.txt
+    startCommand: streamlit run streamlit_demo/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: API_URL
+        value: https://shl-assessment-recommender-0wam.onrender.com
